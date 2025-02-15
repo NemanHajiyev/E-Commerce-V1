@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getProducts, getCategorieProducts } from '../../Redux/ProductsSlice'
-import Loading from '../Pages/Loading'
 import ReactPaginate from 'react-paginate';
 import Product from '../Pages/Product'
 import '../../Styles/Product.css'

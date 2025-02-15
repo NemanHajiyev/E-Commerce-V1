@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux'; // Dispatch'i ve useSele
 import { favorieProduct } from '../../Redux/BasketSlice'; // favorieProduct action'ını import et
 import { FaRegHeart } from "react-icons/fa";
 import { useNavigate } from "react-router";
-import FavorieProducts from './FavorieProducts';
 
 const Product = ({ product }) => {
     const dispatch = useDispatch();
@@ -13,7 +12,7 @@ const Product = ({ product }) => {
     const isFavorite = favorites.some(fav => fav.id === product.id);
 
     const [isActive, setIsActive] = useState(isFavorite);
-    const { title, id, image, price, description } = product;
+    const { title, id, image, price } = product;
 
     const addFavorie = () => {
         setIsActive(!isActive);

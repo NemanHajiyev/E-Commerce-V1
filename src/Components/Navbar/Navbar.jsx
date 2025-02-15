@@ -25,19 +25,13 @@ const Navbar = () => {
                 <h1>Shop Zone</h1>
             </div>
             <div className='navbar-right'>
-                <div className='search-input'>
-                    <input type="text" />
-                    <FaSearch className='icon' />
-                </div>
+
                 <div className='basket-div'>
                     {darkMode ? (
                         <IoSunnyOutline onClick={changeTheme} className='icon' />
                     ) : (
                         <IoMoonOutline onClick={changeTheme} className='icon' />
                     )}
-                    <FaRegHeart
-                        onClick={() => navigate("/favorie")}
-                        className='icon' />
                     <GrBasket onClick={() => navigate("/basket")} className='icon' />
                     <div className='item'>{products.length}</div>
                 </div>
