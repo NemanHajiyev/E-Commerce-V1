@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import '../../Styles/Basket.css'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { calculateBasket, removeBasketItem } from '../../Redux/BasketSlice'
 
 const BasketElement = ({ product }) => {

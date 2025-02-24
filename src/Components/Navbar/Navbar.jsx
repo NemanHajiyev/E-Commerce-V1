@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import '../../Styles/Navbar.css'
-import { FaSearch } from "react-icons/fa";
-import { FaRegHeart } from "react-icons/fa";
 import { GrBasket } from "react-icons/gr";
 import { useSelector } from 'react-redux';
 import { useNavigate } from "react-router";

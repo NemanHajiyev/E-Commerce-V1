@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../Styles/Product.css';
-import { useDispatch, useSelector } from 'react-redux'; // Dispatch'i ve useSelector'u import et
-import { favorieProduct } from '../../Redux/BasketSlice'; // favorieProduct action'ını import et
+import { useDispatch, useSelector } from 'react-redux';
+import { favorieProduct } from '../../Redux/BasketSlice';
 import { FaRegHeart } from "react-icons/fa";
 import { useNavigate } from "react-router";
 
